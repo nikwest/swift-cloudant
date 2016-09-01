@@ -163,13 +163,10 @@ internal class InterceptableSession: NSObject, URLSessionDelegate, URLSessionTas
 
     internal lazy var session: URLSession = { () -> URLSession in
         let config = URLSessionConfiguration.default
-        #if os(Linux)
-            config.httpAdditionalHeaders = ["User-Agent".bridge() : InterceptableSession.userAgent().bridge()]
-        #else
-            config.httpAdditionalHeaders = [("User-Agent" as NSString) as AnyHashable: InterceptableSession.userAgent()]
-        #endif
+        config.httpAdditionalHeaders = [("User-Agent" as NSString) as AnyHashable: InterceptableSession.userAgent()]
         config.httpCookieAcceptPolicy = .onlyFromMainDocumentDomain
         config.httpCookieStorage = .shared
+        
         return URLSession(configuration: config, delegate: self, delegateQueue: nil) }()
     
     private var taskDict: [Foundation.URLSessionTask: URLSessionTask] = [:]
