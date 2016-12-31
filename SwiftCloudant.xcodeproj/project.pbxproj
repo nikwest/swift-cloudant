@@ -56,7 +56,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B4D81E241E183A3C00B2E455 /* PBXContainerItemProxy */ = {
+		B4D81E251E183C7500B2E455 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -420,7 +420,7 @@
 		OBJ_126 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_68 /* SwiftCloudant */;
-			targetProxy = B4D81E241E183A3C00B2E455 /* PBXContainerItemProxy */;
+			targetProxy = B4D81E251E183C7500B2E455 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
