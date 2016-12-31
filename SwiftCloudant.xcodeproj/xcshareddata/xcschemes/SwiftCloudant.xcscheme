@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_59"
+               BlueprintIdentifier = "OBJ_68"
                BuildableName = "SwiftCloudant.framework"
                BlueprintName = "SwiftCloudant"
                ReferencedContainer = "container:SwiftCloudant.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_90"
+               BlueprintIdentifier = "OBJ_99"
                BuildableName = "SwiftCloudantTests.xctest"
                BlueprintName = "SwiftCloudantTests"
                ReferencedContainer = "container:SwiftCloudant.xcodeproj">
@@ -55,7 +55,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "OBJ_59"
+            BlueprintIdentifier = "OBJ_68"
             BuildableName = "SwiftCloudant.framework"
             BlueprintName = "SwiftCloudant"
             ReferencedContainer = "container:SwiftCloudant.xcodeproj">
