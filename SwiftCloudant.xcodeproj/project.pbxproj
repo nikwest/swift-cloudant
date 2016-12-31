@@ -1,0 +1,953 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4D81DF91E17359D00B2E455 /* SwiftCloudant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D81DF01E17359D00B2E455 /* SwiftCloudant.framework */; };
+		B4D81DFE1E17359D00B2E455 /* SwiftCloudant_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D81DFD1E17359D00B2E455 /* SwiftCloudant_iOSTests.swift */; };
+		B4D81E001E17359D00B2E455 /* SwiftCloudant iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = B4D81DF21E17359D00B2E455 /* SwiftCloudant iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4D81E071E17379900B2E455 /* BulkDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* BulkDocs.swift */; };
+		B4D81E081E17379900B2E455 /* CouchClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* CouchClient.swift */; };
+		B4D81E091E17379900B2E455 /* CouchDatabaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* CouchDatabaseOperation.swift */; };
+		B4D81E0A1E17379900B2E455 /* CreateDatabaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* CreateDatabaseOperation.swift */; };
+		B4D81E0B1E17379900B2E455 /* CreateQueryIndexOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* CreateQueryIndexOperation.swift */; };
+		B4D81E0C1E17379900B2E455 /* DeleteAttachmentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* DeleteAttachmentOperation.swift */; };
+		B4D81E0D1E17379900B2E455 /* DeleteDatabaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* DeleteDatabaseOperation.swift */; };
+		B4D81E0E1E17379900B2E455 /* DeleteDocumentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* DeleteDocumentOperation.swift */; };
+		B4D81E0F1E17379900B2E455 /* DeleteQueryIndexOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* DeleteQueryIndexOperation.swift */; };
+		B4D81E101E17379900B2E455 /* FindDocumentsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* FindDocumentsOperation.swift */; };
+		B4D81E111E17379900B2E455 /* GetAllDatabasesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* GetAllDatabasesOperation.swift */; };
+		B4D81E121E17379900B2E455 /* GetAllDocsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* GetAllDocsOperation.swift */; };
+		B4D81E131E17379900B2E455 /* GetChangesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* GetChangesOperation.swift */; };
+		B4D81E141E17379900B2E455 /* GetDocumentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* GetDocumentOperation.swift */; };
+		B4D81E151E17379900B2E455 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Operation.swift */; };
+		B4D81E161E17379900B2E455 /* OperationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* OperationProtocols.swift */; };
+		B4D81E171E17379900B2E455 /* PutAttachmentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* PutAttachmentOperation.swift */; };
+		B4D81E181E17379900B2E455 /* PutDocumentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* PutDocumentOperation.swift */; };
+		B4D81E191E17379900B2E455 /* QueryViewOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* QueryViewOperation.swift */; };
+		B4D81E1A1E17379900B2E455 /* ReadAttachmentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* ReadAttachmentOperation.swift */; };
+		B4D81E1B1E17379900B2E455 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* RequestBuilder.swift */; };
+		B4D81E1C1E17379900B2E455 /* RequestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* RequestExecutor.swift */; };
+		B4D81E1D1E17379900B2E455 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* URLSession.swift */; };
+		B4D81E1E1E17379900B2E455 /* ViewLikeOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* ViewLikeOperation.swift */; };
+		B4D81E1F1E17379900B2E455 /* ViewPaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* ViewPaging.swift */; };
+		OBJ_100 /* DeleteQueryIndexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* DeleteQueryIndexTests.swift */; };
+		OBJ_101 /* FindDocumentOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* FindDocumentOperationTests.swift */; };
+		OBJ_102 /* GetAllDatabasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* GetAllDatabasesTests.swift */; };
+		OBJ_103 /* GetAllDocsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* GetAllDocsTest.swift */; };
+		OBJ_104 /* GetChangesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* GetChangesTests.swift */; };
+		OBJ_105 /* GetDocumentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* GetDocumentTests.swift */; };
+		OBJ_106 /* InterceptableSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* InterceptableSessionTests.swift */; };
+		OBJ_107 /* PutAttachmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* PutAttachmentTests.swift */; };
+		OBJ_108 /* PutDocumentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* PutDocumentTests.swift */; };
+		OBJ_109 /* QueryViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* QueryViewTests.swift */; };
+		OBJ_110 /* ReadAttachmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* ReadAttachmentTests.swift */; };
+		OBJ_111 /* SwiftCloudantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* SwiftCloudantTests.swift */; };
+		OBJ_112 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* TestHelpers.swift */; };
+		OBJ_113 /* ViewPagingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* ViewPagingTests.swift */; };
+		OBJ_115 /* SwiftCloudant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* SwiftCloudant.framework */; };
+		OBJ_64 /* BulkDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* BulkDocs.swift */; };
+		OBJ_65 /* CouchClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* CouchClient.swift */; };
+		OBJ_66 /* CouchDatabaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* CouchDatabaseOperation.swift */; };
+		OBJ_67 /* CreateDatabaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* CreateDatabaseOperation.swift */; };
+		OBJ_68 /* CreateQueryIndexOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* CreateQueryIndexOperation.swift */; };
+		OBJ_69 /* DeleteAttachmentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* DeleteAttachmentOperation.swift */; };
+		OBJ_70 /* DeleteDatabaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* DeleteDatabaseOperation.swift */; };
+		OBJ_71 /* DeleteDocumentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* DeleteDocumentOperation.swift */; };
+		OBJ_72 /* DeleteQueryIndexOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* DeleteQueryIndexOperation.swift */; };
+		OBJ_73 /* FindDocumentsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* FindDocumentsOperation.swift */; };
+		OBJ_74 /* GetAllDatabasesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* GetAllDatabasesOperation.swift */; };
+		OBJ_75 /* GetAllDocsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* GetAllDocsOperation.swift */; };
+		OBJ_76 /* GetChangesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* GetChangesOperation.swift */; };
+		OBJ_77 /* GetDocumentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* GetDocumentOperation.swift */; };
+		OBJ_78 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Operation.swift */; };
+		OBJ_79 /* OperationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* OperationProtocols.swift */; };
+		OBJ_80 /* PutAttachmentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* PutAttachmentOperation.swift */; };
+		OBJ_81 /* PutDocumentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* PutDocumentOperation.swift */; };
+		OBJ_82 /* QueryViewOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* QueryViewOperation.swift */; };
+		OBJ_83 /* ReadAttachmentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* ReadAttachmentOperation.swift */; };
+		OBJ_84 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* RequestBuilder.swift */; };
+		OBJ_85 /* RequestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* RequestExecutor.swift */; };
+		OBJ_86 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* URLSession.swift */; };
+		OBJ_87 /* ViewLikeOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* ViewLikeOperation.swift */; };
+		OBJ_88 /* ViewPaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* ViewPaging.swift */; };
+		OBJ_95 /* BulkDocsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* BulkDocsTests.swift */; };
+		OBJ_96 /* CreateDatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* CreateDatabaseTests.swift */; };
+		OBJ_97 /* CreateQueryIndexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* CreateQueryIndexTests.swift */; };
+		OBJ_98 /* DeleteAttachmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* DeleteAttachmentTests.swift */; };
+		OBJ_99 /* DeleteDocumentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* DeleteDocumentTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4D81DB51E17307200B2E455 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_59;
+			remoteInfo = SwiftCloudant;
+		};
+		B4D81DFA1E17359D00B2E455 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4D81DEF1E17359D00B2E455;
+			remoteInfo = "SwiftCloudant iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B4D81DF01E17359D00B2E455 /* SwiftCloudant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCloudant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D81DF21E17359D00B2E455 /* SwiftCloudant iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftCloudant iOS.h"; sourceTree = "<group>"; };
+		B4D81DF31E17359D00B2E455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4D81DF81E17359D00B2E455 /* SwiftCloudant iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftCloudant iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D81DFD1E17359D00B2E455 /* SwiftCloudant_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCloudant_iOSTests.swift; sourceTree = "<group>"; };
+		B4D81DFF1E17359D00B2E455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		OBJ_10 /* CouchClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouchClient.swift; sourceTree = "<group>"; };
+		OBJ_11 /* CouchDatabaseOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouchDatabaseOperation.swift; sourceTree = "<group>"; };
+		OBJ_12 /* CreateDatabaseOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDatabaseOperation.swift; sourceTree = "<group>"; };
+		OBJ_13 /* CreateQueryIndexOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQueryIndexOperation.swift; sourceTree = "<group>"; };
+		OBJ_14 /* DeleteAttachmentOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAttachmentOperation.swift; sourceTree = "<group>"; };
+		OBJ_15 /* DeleteDatabaseOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteDatabaseOperation.swift; sourceTree = "<group>"; };
+		OBJ_16 /* DeleteDocumentOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteDocumentOperation.swift; sourceTree = "<group>"; };
+		OBJ_17 /* DeleteQueryIndexOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteQueryIndexOperation.swift; sourceTree = "<group>"; };
+		OBJ_18 /* FindDocumentsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDocumentsOperation.swift; sourceTree = "<group>"; };
+		OBJ_19 /* GetAllDatabasesOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllDatabasesOperation.swift; sourceTree = "<group>"; };
+		OBJ_20 /* GetAllDocsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllDocsOperation.swift; sourceTree = "<group>"; };
+		OBJ_21 /* GetChangesOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetChangesOperation.swift; sourceTree = "<group>"; };
+		OBJ_22 /* GetDocumentOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDocumentOperation.swift; sourceTree = "<group>"; };
+		OBJ_23 /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		OBJ_24 /* OperationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationProtocols.swift; sourceTree = "<group>"; };
+		OBJ_25 /* PutAttachmentOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutAttachmentOperation.swift; sourceTree = "<group>"; };
+		OBJ_26 /* PutDocumentOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutDocumentOperation.swift; sourceTree = "<group>"; };
+		OBJ_27 /* QueryViewOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryViewOperation.swift; sourceTree = "<group>"; };
+		OBJ_28 /* ReadAttachmentOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadAttachmentOperation.swift; sourceTree = "<group>"; };
+		OBJ_29 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		OBJ_30 /* RequestExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestExecutor.swift; sourceTree = "<group>"; };
+		OBJ_31 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		OBJ_32 /* ViewLikeOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLikeOperation.swift; sourceTree = "<group>"; };
+		OBJ_33 /* ViewPaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPaging.swift; sourceTree = "<group>"; };
+		OBJ_36 /* BulkDocsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkDocsTests.swift; sourceTree = "<group>"; };
+		OBJ_37 /* CreateDatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDatabaseTests.swift; sourceTree = "<group>"; };
+		OBJ_38 /* CreateQueryIndexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQueryIndexTests.swift; sourceTree = "<group>"; };
+		OBJ_39 /* DeleteAttachmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAttachmentTests.swift; sourceTree = "<group>"; };
+		OBJ_40 /* DeleteDocumentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteDocumentTests.swift; sourceTree = "<group>"; };
+		OBJ_41 /* DeleteQueryIndexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteQueryIndexTests.swift; sourceTree = "<group>"; };
+		OBJ_42 /* FindDocumentOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDocumentOperationTests.swift; sourceTree = "<group>"; };
+		OBJ_43 /* GetAllDatabasesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllDatabasesTests.swift; sourceTree = "<group>"; };
+		OBJ_44 /* GetAllDocsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllDocsTest.swift; sourceTree = "<group>"; };
+		OBJ_45 /* GetChangesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetChangesTests.swift; sourceTree = "<group>"; };
+		OBJ_46 /* GetDocumentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDocumentTests.swift; sourceTree = "<group>"; };
+		OBJ_47 /* InterceptableSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterceptableSessionTests.swift; sourceTree = "<group>"; };
+		OBJ_48 /* PutAttachmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutAttachmentTests.swift; sourceTree = "<group>"; };
+		OBJ_49 /* PutDocumentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutDocumentTests.swift; sourceTree = "<group>"; };
+		OBJ_50 /* QueryViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryViewTests.swift; sourceTree = "<group>"; };
+		OBJ_51 /* ReadAttachmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadAttachmentTests.swift; sourceTree = "<group>"; };
+		OBJ_52 /* SwiftCloudantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCloudantTests.swift; sourceTree = "<group>"; };
+		OBJ_53 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
+		OBJ_54 /* ViewPagingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPagingTests.swift; sourceTree = "<group>"; };
+		OBJ_55 /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Carthage; sourceTree = SOURCE_ROOT; };
+		OBJ_57 /* SwiftCloudant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftCloudant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_58 /* SwiftCloudantTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiftCloudantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* BulkDocs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkDocs.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4D81DEC1E17359D00B2E455 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D81DF51E17359D00B2E455 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D81DF91E17359D00B2E455 /* SwiftCloudant.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_114 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_115 /* SwiftCloudant.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B4D81DF11E17359D00B2E455 /* SwiftCloudant iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B4D81DF21E17359D00B2E455 /* SwiftCloudant iOS.h */,
+				B4D81DF31E17359D00B2E455 /* Info.plist */,
+			);
+			path = "SwiftCloudant iOS";
+			sourceTree = "<group>";
+		};
+		B4D81DFC1E17359D00B2E455 /* SwiftCloudant iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4D81DFD1E17359D00B2E455 /* SwiftCloudant_iOSTests.swift */,
+				B4D81DFF1E17359D00B2E455 /* Info.plist */,
+			);
+			path = "SwiftCloudant iOSTests";
+			sourceTree = "<group>";
+		};
+		OBJ_34 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_35 /* SwiftCloudantTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		OBJ_35 /* SwiftCloudantTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_36 /* BulkDocsTests.swift */,
+				OBJ_37 /* CreateDatabaseTests.swift */,
+				OBJ_38 /* CreateQueryIndexTests.swift */,
+				OBJ_39 /* DeleteAttachmentTests.swift */,
+				OBJ_40 /* DeleteDocumentTests.swift */,
+				OBJ_41 /* DeleteQueryIndexTests.swift */,
+				OBJ_42 /* FindDocumentOperationTests.swift */,
+				OBJ_43 /* GetAllDatabasesTests.swift */,
+				OBJ_44 /* GetAllDocsTest.swift */,
+				OBJ_45 /* GetChangesTests.swift */,
+				OBJ_46 /* GetDocumentTests.swift */,
+				OBJ_47 /* InterceptableSessionTests.swift */,
+				OBJ_48 /* PutAttachmentTests.swift */,
+				OBJ_49 /* PutDocumentTests.swift */,
+				OBJ_50 /* QueryViewTests.swift */,
+				OBJ_51 /* ReadAttachmentTests.swift */,
+				OBJ_52 /* SwiftCloudantTests.swift */,
+				OBJ_53 /* TestHelpers.swift */,
+				OBJ_54 /* ViewPagingTests.swift */,
+			);
+			name = SwiftCloudantTests;
+			path = Tests/SwiftCloudantTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_34 /* Tests */,
+				OBJ_55 /* Carthage */,
+				B4D81DF11E17359D00B2E455 /* SwiftCloudant iOS */,
+				B4D81DFC1E17359D00B2E455 /* SwiftCloudant iOSTests */,
+				OBJ_56 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_57 /* SwiftCloudant.framework */,
+				OBJ_58 /* SwiftCloudantTests.xctest */,
+				B4D81DF01E17359D00B2E455 /* SwiftCloudant.framework */,
+				B4D81DF81E17359D00B2E455 /* SwiftCloudant iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* SwiftCloudant */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		OBJ_8 /* SwiftCloudant */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* BulkDocs.swift */,
+				OBJ_10 /* CouchClient.swift */,
+				OBJ_11 /* CouchDatabaseOperation.swift */,
+				OBJ_12 /* CreateDatabaseOperation.swift */,
+				OBJ_13 /* CreateQueryIndexOperation.swift */,
+				OBJ_14 /* DeleteAttachmentOperation.swift */,
+				OBJ_15 /* DeleteDatabaseOperation.swift */,
+				OBJ_16 /* DeleteDocumentOperation.swift */,
+				OBJ_17 /* DeleteQueryIndexOperation.swift */,
+				OBJ_18 /* FindDocumentsOperation.swift */,
+				OBJ_19 /* GetAllDatabasesOperation.swift */,
+				OBJ_20 /* GetAllDocsOperation.swift */,
+				OBJ_21 /* GetChangesOperation.swift */,
+				OBJ_22 /* GetDocumentOperation.swift */,
+				OBJ_23 /* Operation.swift */,
+				OBJ_24 /* OperationProtocols.swift */,
+				OBJ_25 /* PutAttachmentOperation.swift */,
+				OBJ_26 /* PutDocumentOperation.swift */,
+				OBJ_27 /* QueryViewOperation.swift */,
+				OBJ_28 /* ReadAttachmentOperation.swift */,
+				OBJ_29 /* RequestBuilder.swift */,
+				OBJ_30 /* RequestExecutor.swift */,
+				OBJ_31 /* URLSession.swift */,
+				OBJ_32 /* ViewLikeOperation.swift */,
+				OBJ_33 /* ViewPaging.swift */,
+			);
+			name = SwiftCloudant;
+			path = Source;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B4D81DED1E17359D00B2E455 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D81E001E17359D00B2E455 /* SwiftCloudant iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B4D81DEF1E17359D00B2E455 /* SwiftCloudant iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4D81E011E17359D00B2E455 /* Build configuration list for PBXNativeTarget "SwiftCloudant iOS" */;
+			buildPhases = (
+				B4D81DEB1E17359D00B2E455 /* Sources */,
+				B4D81DEC1E17359D00B2E455 /* Frameworks */,
+				B4D81DED1E17359D00B2E455 /* Headers */,
+				B4D81DEE1E17359D00B2E455 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftCloudant iOS";
+			productName = "SwiftCloudant iOS";
+			productReference = B4D81DF01E17359D00B2E455 /* SwiftCloudant.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B4D81DF71E17359D00B2E455 /* SwiftCloudant iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4D81E041E17359D00B2E455 /* Build configuration list for PBXNativeTarget "SwiftCloudant iOSTests" */;
+			buildPhases = (
+				B4D81DF41E17359D00B2E455 /* Sources */,
+				B4D81DF51E17359D00B2E455 /* Frameworks */,
+				B4D81DF61E17359D00B2E455 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4D81DFB1E17359D00B2E455 /* PBXTargetDependency */,
+			);
+			name = "SwiftCloudant iOSTests";
+			productName = "SwiftCloudant iOSTests";
+			productReference = B4D81DF81E17359D00B2E455 /* SwiftCloudant iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		OBJ_59 /* SwiftCloudant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_60 /* Build configuration list for PBXNativeTarget "SwiftCloudant" */;
+			buildPhases = (
+				OBJ_63 /* Sources */,
+				OBJ_89 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftCloudant;
+			productName = SwiftCloudant;
+			productReference = OBJ_57 /* SwiftCloudant.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_90 /* SwiftCloudantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_91 /* Build configuration list for PBXNativeTarget "SwiftCloudantTests" */;
+			buildPhases = (
+				OBJ_94 /* Sources */,
+				OBJ_114 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_116 /* PBXTargetDependency */,
+			);
+			name = SwiftCloudantTests;
+			productName = SwiftCloudantTests;
+			productReference = OBJ_58 /* SwiftCloudantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					B4D81DEF1E17359D00B2E455 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					B4D81DF71E17359D00B2E455 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					OBJ_59 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "SwiftCloudant" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				OBJ_59 /* SwiftCloudant */,
+				OBJ_90 /* SwiftCloudantTests */,
+				B4D81DEF1E17359D00B2E455 /* SwiftCloudant iOS */,
+				B4D81DF71E17359D00B2E455 /* SwiftCloudant iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4D81DEE1E17359D00B2E455 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D81DF61E17359D00B2E455 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4D81DEB1E17359D00B2E455 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D81E1B1E17379900B2E455 /* RequestBuilder.swift in Sources */,
+				B4D81E181E17379900B2E455 /* PutDocumentOperation.swift in Sources */,
+				B4D81E071E17379900B2E455 /* BulkDocs.swift in Sources */,
+				B4D81E1E1E17379900B2E455 /* ViewLikeOperation.swift in Sources */,
+				B4D81E1A1E17379900B2E455 /* ReadAttachmentOperation.swift in Sources */,
+				B4D81E0C1E17379900B2E455 /* DeleteAttachmentOperation.swift in Sources */,
+				B4D81E0D1E17379900B2E455 /* DeleteDatabaseOperation.swift in Sources */,
+				B4D81E0E1E17379900B2E455 /* DeleteDocumentOperation.swift in Sources */,
+				B4D81E1F1E17379900B2E455 /* ViewPaging.swift in Sources */,
+				B4D81E091E17379900B2E455 /* CouchDatabaseOperation.swift in Sources */,
+				B4D81E101E17379900B2E455 /* FindDocumentsOperation.swift in Sources */,
+				B4D81E1D1E17379900B2E455 /* URLSession.swift in Sources */,
+				B4D81E0A1E17379900B2E455 /* CreateDatabaseOperation.swift in Sources */,
+				B4D81E121E17379900B2E455 /* GetAllDocsOperation.swift in Sources */,
+				B4D81E151E17379900B2E455 /* Operation.swift in Sources */,
+				B4D81E161E17379900B2E455 /* OperationProtocols.swift in Sources */,
+				B4D81E131E17379900B2E455 /* GetChangesOperation.swift in Sources */,
+				B4D81E191E17379900B2E455 /* QueryViewOperation.swift in Sources */,
+				B4D81E0B1E17379900B2E455 /* CreateQueryIndexOperation.swift in Sources */,
+				B4D81E1C1E17379900B2E455 /* RequestExecutor.swift in Sources */,
+				B4D81E111E17379900B2E455 /* GetAllDatabasesOperation.swift in Sources */,
+				B4D81E081E17379900B2E455 /* CouchClient.swift in Sources */,
+				B4D81E0F1E17379900B2E455 /* DeleteQueryIndexOperation.swift in Sources */,
+				B4D81E141E17379900B2E455 /* GetDocumentOperation.swift in Sources */,
+				B4D81E171E17379900B2E455 /* PutAttachmentOperation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D81DF41E17359D00B2E455 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D81DFE1E17359D00B2E455 /* SwiftCloudant_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_64 /* BulkDocs.swift in Sources */,
+				OBJ_65 /* CouchClient.swift in Sources */,
+				OBJ_66 /* CouchDatabaseOperation.swift in Sources */,
+				OBJ_67 /* CreateDatabaseOperation.swift in Sources */,
+				OBJ_68 /* CreateQueryIndexOperation.swift in Sources */,
+				OBJ_69 /* DeleteAttachmentOperation.swift in Sources */,
+				OBJ_70 /* DeleteDatabaseOperation.swift in Sources */,
+				OBJ_71 /* DeleteDocumentOperation.swift in Sources */,
+				OBJ_72 /* DeleteQueryIndexOperation.swift in Sources */,
+				OBJ_73 /* FindDocumentsOperation.swift in Sources */,
+				OBJ_74 /* GetAllDatabasesOperation.swift in Sources */,
+				OBJ_75 /* GetAllDocsOperation.swift in Sources */,
+				OBJ_76 /* GetChangesOperation.swift in Sources */,
+				OBJ_77 /* GetDocumentOperation.swift in Sources */,
+				OBJ_78 /* Operation.swift in Sources */,
+				OBJ_79 /* OperationProtocols.swift in Sources */,
+				OBJ_80 /* PutAttachmentOperation.swift in Sources */,
+				OBJ_81 /* PutDocumentOperation.swift in Sources */,
+				OBJ_82 /* QueryViewOperation.swift in Sources */,
+				OBJ_83 /* ReadAttachmentOperation.swift in Sources */,
+				OBJ_84 /* RequestBuilder.swift in Sources */,
+				OBJ_85 /* RequestExecutor.swift in Sources */,
+				OBJ_86 /* URLSession.swift in Sources */,
+				OBJ_87 /* ViewLikeOperation.swift in Sources */,
+				OBJ_88 /* ViewPaging.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_95 /* BulkDocsTests.swift in Sources */,
+				OBJ_96 /* CreateDatabaseTests.swift in Sources */,
+				OBJ_97 /* CreateQueryIndexTests.swift in Sources */,
+				OBJ_98 /* DeleteAttachmentTests.swift in Sources */,
+				OBJ_99 /* DeleteDocumentTests.swift in Sources */,
+				OBJ_100 /* DeleteQueryIndexTests.swift in Sources */,
+				OBJ_101 /* FindDocumentOperationTests.swift in Sources */,
+				OBJ_102 /* GetAllDatabasesTests.swift in Sources */,
+				OBJ_103 /* GetAllDocsTest.swift in Sources */,
+				OBJ_104 /* GetChangesTests.swift in Sources */,
+				OBJ_105 /* GetDocumentTests.swift in Sources */,
+				OBJ_106 /* InterceptableSessionTests.swift in Sources */,
+				OBJ_107 /* PutAttachmentTests.swift in Sources */,
+				OBJ_108 /* PutDocumentTests.swift in Sources */,
+				OBJ_109 /* QueryViewTests.swift in Sources */,
+				OBJ_110 /* ReadAttachmentTests.swift in Sources */,
+				OBJ_111 /* SwiftCloudantTests.swift in Sources */,
+				OBJ_112 /* TestHelpers.swift in Sources */,
+				OBJ_113 /* ViewPagingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4D81DFB1E17359D00B2E455 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4D81DEF1E17359D00B2E455 /* SwiftCloudant iOS */;
+			targetProxy = B4D81DFA1E17359D00B2E455 /* PBXContainerItemProxy */;
+		};
+		OBJ_116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_59 /* SwiftCloudant */;
+			targetProxy = B4D81DB51E17307200B2E455 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B4D81E021E17359D00B2E455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "SwiftCloudant iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.nikwest.SwiftCloudant;
+				PRODUCT_NAME = SwiftCloudant;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B4D81E031E17359D00B2E455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "SwiftCloudant iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = de.nikwest.SwiftCloudant;
+				PRODUCT_NAME = SwiftCloudant;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B4D81E051E17359D00B2E455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "SwiftCloudant iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.nikwest.SwiftCloudant-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B4D81E061E17359D00B2E455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "SwiftCloudant iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.nikwest.SwiftCloudant-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftCloudant.xcodeproj/SwiftCloudant_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftCloudant;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = SwiftCloudant;
+			};
+			name = Debug;
+		};
+		OBJ_62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftCloudant.xcodeproj/SwiftCloudant_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftCloudant;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = SwiftCloudant;
+			};
+			name = Release;
+		};
+		OBJ_92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftCloudant.xcodeproj/SwiftCloudantTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				TARGET_NAME = SwiftCloudantTests;
+			};
+			name = Debug;
+		};
+		OBJ_93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftCloudant.xcodeproj/SwiftCloudantTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				TARGET_NAME = SwiftCloudantTests;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4D81E011E17359D00B2E455 /* Build configuration list for PBXNativeTarget "SwiftCloudant iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4D81E021E17359D00B2E455 /* Debug */,
+				B4D81E031E17359D00B2E455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B4D81E041E17359D00B2E455 /* Build configuration list for PBXNativeTarget "SwiftCloudant iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4D81E051E17359D00B2E455 /* Debug */,
+				B4D81E061E17359D00B2E455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "SwiftCloudant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_60 /* Build configuration list for PBXNativeTarget "SwiftCloudant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_61 /* Debug */,
+				OBJ_62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_91 /* Build configuration list for PBXNativeTarget "SwiftCloudantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_92 /* Debug */,
+				OBJ_93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
