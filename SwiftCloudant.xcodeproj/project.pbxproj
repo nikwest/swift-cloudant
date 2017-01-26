@@ -251,7 +251,7 @@
 			path = Tests/SwiftCloudantTests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -261,7 +261,6 @@
 				OBJ_64 /* SwiftCloudant iOSTests */,
 				OBJ_65 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_65 /* Products */ = {
@@ -343,7 +342,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_65 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -514,7 +513,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = SwiftCloudant;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cloudant.SwiftCloudant;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				TARGET_NAME = SwiftCloudant;
@@ -534,7 +533,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = SwiftCloudant;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cloudant.SwiftCloudant;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				TARGET_NAME = SwiftCloudant;
