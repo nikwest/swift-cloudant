@@ -24,7 +24,6 @@
 		OBJ_118 /* PutDocumentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* PutDocumentTests.swift */; };
 		OBJ_119 /* QueryViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* QueryViewTests.swift */; };
 		OBJ_120 /* ReadAttachmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* ReadAttachmentTests.swift */; };
-		OBJ_121 /* SwiftCloudantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* SwiftCloudantTests.swift */; };
 		OBJ_122 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* TestHelpers.swift */; };
 		OBJ_123 /* ViewPagingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* ViewPagingTests.swift */; };
 		OBJ_125 /* SwiftCloudant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* SwiftCloudant.framework */; };
@@ -108,13 +107,12 @@
 		OBJ_58 /* QueryViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryViewTests.swift; sourceTree = "<group>"; };
 		OBJ_59 /* ReadAttachmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadAttachmentTests.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_60 /* SwiftCloudantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCloudantTests.swift; sourceTree = "<group>"; };
 		OBJ_61 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 		OBJ_62 /* ViewPagingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPagingTests.swift; sourceTree = "<group>"; };
 		OBJ_63 /* SwiftCloudant iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SwiftCloudant iOS"; sourceTree = SOURCE_ROOT; };
 		OBJ_64 /* SwiftCloudant iOSTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SwiftCloudant iOSTests"; sourceTree = SOURCE_ROOT; };
 		OBJ_66 /* SwiftCloudant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftCloudant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_67 /* SwiftCloudantTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiftCloudantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_67 /* SwiftCloudantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = SwiftCloudantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_9 /* CouchClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouchClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -243,7 +241,6 @@
 				OBJ_57 /* PutDocumentTests.swift */,
 				OBJ_58 /* QueryViewTests.swift */,
 				OBJ_59 /* ReadAttachmentTests.swift */,
-				OBJ_60 /* SwiftCloudantTests.swift */,
 				OBJ_61 /* TestHelpers.swift */,
 				OBJ_62 /* ViewPagingTests.swift */,
 			);
@@ -334,6 +331,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					OBJ_68 = {
+						LastSwiftMigration = 0910;
+					};
+					OBJ_99 = {
+						LastSwiftMigration = 0910;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "SwiftCloudant" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -375,7 +380,6 @@
 				OBJ_118 /* PutDocumentTests.swift in Sources */,
 				OBJ_119 /* QueryViewTests.swift in Sources */,
 				OBJ_120 /* ReadAttachmentTests.swift in Sources */,
-				OBJ_121 /* SwiftCloudantTests.swift in Sources */,
 				OBJ_122 /* TestHelpers.swift in Sources */,
 				OBJ_123 /* ViewPagingTests.swift in Sources */,
 			);
@@ -437,6 +441,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = SwiftCloudantTests;
 			};
 			name = Debug;
@@ -454,6 +460,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = SwiftCloudantTests;
 			};
 			name = Release;
@@ -475,7 +483,7 @@
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				USE_HEADERMAP = NO;
 			};
 			name = Debug;
@@ -495,7 +503,7 @@
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				USE_HEADERMAP = NO;
 			};
 			name = Release;
@@ -518,6 +526,8 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = SwiftCloudant;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -541,6 +551,8 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = SwiftCloudant;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
