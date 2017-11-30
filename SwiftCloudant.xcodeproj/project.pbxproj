@@ -274,7 +274,8 @@
 			children = (
 				OBJ_8 /* SwiftCloudant */,
 			);
-			path = Sources;
+			name = Sources;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		OBJ_8 /* SwiftCloudant */ = {
