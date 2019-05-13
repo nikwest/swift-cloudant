@@ -6,7 +6,7 @@
 **Applications use swift-cloudant to store, index and query remote
 JSON data on Cloudant or CouchDB.**
 
-Swift-Cloudant is an [Apache CouchDB&trade;][acdb] client written in Swift 3. It
+Swift-Cloudant is an [Apache CouchDB&trade;][acdb] client written in Swift. It
 is built by [Cloudant](https://cloudant.com) and is available under the
 [Apache 2.0 license][ap2].
 
@@ -38,11 +38,13 @@ on a "best effort" basis.
 
 Currently Swift Cloudant supports:
 
-- macOS
-- Linux (with Swift 4.x); known issues from the Swift Linux runtime:
-    - [issue #176](https://github.com/cloudant/swift-cloudant/issues/176) with `GetChangesOperation`.
-    - [issue #178](https://github.com/cloudant/swift-cloudant/issues/178) authentication fails because cookies are not saved.
+Swift versions
+- Minimum Swift language version 4.2
+- Minimum Swift tools version 5.0
 
+Platforms
+- macOS
+- Linux
 
 Swift Cloudant is unsupported on:
 
@@ -70,14 +72,19 @@ in your Package.swift:
 import SwiftCloudant
 
 // Create a CouchDBClient
-let cloudantURL = NSURL(string:"https://username.cloudant.com")!
+let cloudantURL = URL(string:"https://username.cloudant.com")!
 let client = CouchDBClient(url:cloudantURL, username:"username", password:"password")
 let dbName = "database"
 
 // Create a document
 let create = PutDocumentOperation(id: "doc1", body: ["hello":"world"], databaseName: dbName) {(response, httpInfo, error) in
-    if let error = error {
-        print("Encountered an error while creating a document. Error:\(error)")
+    if let error = error as? SwiftCloudant.Operation.Error {
+        switch error {
+        case .http(let httpError):
+            print("http error status code: \(httpError.statusCode)  response: \(httpError.response)")
+        default:
+            print("Encountered an error while creating a document. Error:\(error)")
+        }
     } else {
         print("Created document \(response?["id"]) with revision id \(response?["rev"])")
     }
@@ -87,9 +94,9 @@ client.add(operation:create)
 // create an attachment
 let attachment = "This is my awesome essay attachment for my document"
 let putAttachment = PutAttachmentOperation(name: "myAwesomeAttachment",
-    contentType:"text/plain",
-    data: attachment.data(using: NSUTF8StringEncoding, allowLossyConversion: false),
-    documentID: "doc1"
+    contentType: "text/plain",
+    data: attachment.data(using: String.Encoding.utf8, allowLossyConversion: false)!,
+    documentID: "doc1",
     revision: "1-revisionidhere",
     databaseName: dbName) { (response, info, error) in
         if let error = error {
