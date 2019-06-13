@@ -91,6 +91,7 @@ public class CouchDBClient {
         self.username = username
         self.password = password
         queue = OperationQueue()
+        queue.maxConcurrentOperationCount = 1
 
         let sessionConfiguration = InterceptableSessionConfiguration(shouldBackOff: configuration.shouldBackOff,
                                                                      backOffRetries: configuration.backOffAttempts,
